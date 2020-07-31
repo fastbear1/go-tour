@@ -20,7 +20,7 @@ func fibonachi() func() int {
 		}
 		last = pos
 
-		fmt.Println(last, i)
+		fmt.Println(last)
 		return last
 	}
 }
@@ -29,6 +29,5 @@ func main() {
 	fib := fibonachi()
 	for i := 0; i < 10; i++ {
 		fib()
-		//fmt.Println(i, fib())
 	}
 }
